@@ -1,8 +1,8 @@
 import Capacitor
 
 struct PluginConfig {
-    static let identifier = "KodxCalendarPlugin"
-    static let jsName = "KodxCalendar"
+    static let identifier = "CapacitorCalendarPlugin"
+    static let jsName = "CapacitorCalendar"
     static let methods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "createEventWithPrompt", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "checkPermission", returnType: CAPPluginReturnPromise),

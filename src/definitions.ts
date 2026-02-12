@@ -4,5 +4,5 @@ import type { EventOperations } from './sub-definitions/event-operations';
 import type { RemindersAccess } from './sub-definitions/reminders-access';
 import type { RemindersOperations } from './sub-definitions/reminders-operations';
 
-export interface KodxCalendarPlugin
+export interface CapacitorCalendarPlugin
   extends CalendarAccess, RemindersAccess, EventOperations, CalendarOperations, RemindersOperations { }

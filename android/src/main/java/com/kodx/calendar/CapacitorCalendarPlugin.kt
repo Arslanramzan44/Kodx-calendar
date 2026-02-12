@@ -32,7 +32,7 @@ import com.kodx.calendar.models.results.RequestAllPermissionsResult
 import com.kodx.calendar.models.results.RequestPermissionResult
 
 @CapacitorPlugin(
-    name = "KodxCalendar",
+    name = "CapacitorCalendar",
     permissions = [
         Permission(
             alias = "readCalendar",
@@ -55,7 +55,7 @@ import com.kodx.calendar.models.results.RequestPermissionResult
         ),
     ],
 )
-class KodxCalendarPlugin : Plugin() {
+class CapacitorCalendarPlugin : Plugin() {
     private val implementation: CapacitorCalendar by lazy { CapacitorCalendar(this) }
     private var eventIdOptional = false
 

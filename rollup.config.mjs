@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorKodxCalendar',
+      name: 'capacitorCalendar',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

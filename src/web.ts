@@ -1,7 +1,7 @@
 import type { PermissionState } from '@capacitor/core';
 import { WebPlugin } from '@capacitor/core';
 
-import type { KodxCalendarPlugin } from './definitions';
+import type { CapacitorCalendarPlugin } from './definitions';
 import type { CalendarPermissionScope } from './schemas/enums/calendar-permission-scope';
 import type { Calendar } from './schemas/interfaces/calendar';
 import type { CalendarEvent } from './schemas/interfaces/calendar-event';
@@ -33,7 +33,7 @@ import type { CheckAllPermissionsResult, RequestAllPermissionsResult } from './s
 import type { DeleteEventsByIdResult } from './sub-definitions/event-operations';
 import type { DeleteRemindersByIdResult } from './sub-definitions/reminders-operations';
 
-export class KodxCalendarWeb extends WebPlugin implements KodxCalendarPlugin {
+export class CapacitorCalendarWeb extends WebPlugin implements CapacitorCalendarPlugin {
   public checkPermission(_options: { scope: CalendarPermissionScope }): Promise<{ result: PermissionState }> {
     return this.throwUnimplemented(this.checkPermission.name);
   }

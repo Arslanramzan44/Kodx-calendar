@@ -1,6 +1,6 @@
-import { KodxCalendar } from 'y';
+import { CapacitorCalendar } from 'capacitor-calendar-plugin';
 
 window.testEcho = () => {
     const inputValue = document.getElementById("echoInput").value;
-    KodxCalendar.echo({ value: inputValue })
+    CapacitorCalendar.echo({ value: inputValue })
 }

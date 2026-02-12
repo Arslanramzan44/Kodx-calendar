@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { KodxCalendarPlugin } from './definitions';
+import type { CapacitorCalendarPlugin } from './definitions';
 import { AttendeeRole } from './schemas/enums/attendee-role';
 import { AttendeeStatus } from './schemas/enums/attendee-status';
 import { AttendeeType } from './schemas/enums/attendee-type';
@@ -46,8 +46,8 @@ import type { CheckAllPermissionsResult, RequestAllPermissionsResult } from './s
 import type { DeleteEventsByIdResult } from './sub-definitions/event-operations';
 import type { DeleteRemindersByIdResult } from './sub-definitions/reminders-operations';
 
-const KodxCalendar = registerPlugin<KodxCalendarPlugin>('KodxCalendar', {
-  web: () => import('./web').then((m) => new m.KodxCalendarWeb()),
+const CapacitorCalendar = registerPlugin<CapacitorCalendarPlugin>('CapacitorCalendar', {
+  web: () => import('./web').then((m) => new m.CapacitorCalendarWeb()),
 });
 
 export * from './definitions';
@@ -99,5 +99,5 @@ export {
   AttendeeRole,
   AttendeeType,
   AttendeeStatus,
-  KodxCalendar,
+  CapacitorCalendar,
 };

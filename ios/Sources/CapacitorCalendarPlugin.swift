@@ -1,7 +1,7 @@
 import Capacitor
 
-@objc(KodxCalendarPlugin)
-public class KodxCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
+@objc(CapacitorCalendarPlugin)
+public class CapacitorCalendarPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = PluginConfig.identifier
     public let jsName = PluginConfig.jsName
     public let pluginMethods = PluginConfig.methods
